@@ -56,14 +56,16 @@
         "pub": "vsce publish patch"
     },
     "devDependencies": {
+        "@types/mocha": "^2.2.32",
+        "@types/node": "^6.0.40",
+        "eslint": "^3.6.0",
+        "mocha": "^2.3.3",
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "vscode-nls-dev": "^3.2.1"
     },
     "dependencies": {
-        "opn": "^4.0.2"
+        "opn": "^4.0.2",
+        "vscode-nls": "^3.2.4"
     }
 }
