@@ -2,7 +2,7 @@
     "name": "open-html-in-browser-ml",
     "displayName": "Open HTML in Default Browser ML",
     "description": "Open HTML in Default Browser ML",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "cmlim107",
     "repository": {
         "type": "git",
