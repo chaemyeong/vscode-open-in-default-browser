@@ -32,7 +32,7 @@
         "commands": [
             {
                 "command": "peakchen90.openInBrowser",
-                "title": "在浏览器中打开"
+                "title": "%extension.openhtmlinbrowser.title%"
             }
         ],
         "menus": {

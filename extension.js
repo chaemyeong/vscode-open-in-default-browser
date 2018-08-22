@@ -1,17 +1,24 @@
 var vscode = require('vscode');
 var opn = require('opn');
 
-function activate(context) {
+function getWrongFileMsg() {
+    if (vscode.env.language == "en") {
+        return "Failed to open document.";
+    } else if (vscode.env.language == "ko") {
+        return "파일을 열 수 없습니다.";
+    }
+    return "不能打开非HTML或HTM格式的文件";
+}
 
-    var disposable = vscode.commands.registerCommand('peakchen90.openInBrowser', function (e) {
-        var filename = e._fsPath;
-        if (!/\.html?$/i.test(filename)) {
-            vscode.window.showWarningMessage('不能打开非HTML或HTM格式的文件');
+function activate(context) {
+    var disposable = vscode.commands.registerCommand('peakchen90.openInBrowser', (e) => {
+        var fileName = e._fsPath;
+        if (!/\.html?$/i.test(fileName)) {
+            vscode.window.showWarningMessage(getWrongFileMsg());
             return;
         }
-        opn(filename);
+        opn(fileName);
     });
-
     context.subscriptions.push(disposable);
 }
 exports.activate = activate;
