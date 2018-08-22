@@ -2,16 +2,24 @@ var vscode = require('vscode');
 var opn = require('opn');
 
 function getWrongFileMsg() {
-    if (vscode.env.language == "en") {
-        return "Failed to open document.";
+    if (vscode.env.language == "zh-CN") {
+        return "不能打开非HTML或HTM格式的文件";
+    } else if (vscode.env.language == "zh-TW") {
+        return "不能打開非HTML或HTM格式的文​​件";
     } else if (vscode.env.language == "ko") {
-        return "파일을 열 수 없습니다.";
+        return "HTML 파일을 열 수 없습니다.";
+    } else if (vscode.env.language == "ja") {
+        return "HTML文書を開くことができませんでした。";
+    } else if (vscode.env.language == "es") {
+        return "Error al abrir el documento HTML.";
+    } else if (vscode.env.language == "fr") {
+        return "Impossible d'ouvrir le document HTML.";
     }
-    return "不能打开非HTML或HTM格式的文件";
+    return "Failed to open HTML document.";
 }
 
 function activate(context) {
-    var disposable = vscode.commands.registerCommand('peakchen90.openInBrowser', (e) => {
+    var disposable = vscode.commands.registerCommand('cmlim107.openInBrowser', (e) => {
         var fileName = e._fsPath;
         if (!/\.html?$/i.test(fileName)) {
             vscode.window.showWarningMessage(getWrongFileMsg());

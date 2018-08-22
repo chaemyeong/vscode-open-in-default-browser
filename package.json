@@ -1,15 +1,15 @@
 {
-    "name": "open-html-in-browser",
-    "displayName": "Open HTML in Default Browser",
-    "description": "Open HTML in Default Browser",
-    "version": "0.0.3",
-    "publisher": "peakchen90",
+    "name": "open-html-in-browser-ml",
+    "displayName": "Open HTML in Default Browser ML",
+    "description": "Open HTML in Default Browser ML",
+    "version": "0.0.4",
+    "publisher": "cmlim107",
     "repository": {
         "type": "git",
-        "url": "https://github.com/peakchen90/vscode-open-in-default-browser.git"
+        "url": "https://github.com/cmlim107/vscode-open-in-default-browser.git"
     },
     "bugs": {
-        "url": "https://github.com/peakchen90/vscode-open-in-default-browser/issues"
+        "url": "https://github.com/cmlim107/vscode-open-in-default-browser/issues"
     },
     "engines": {
         "vscode": "^1.10.0"
@@ -25,13 +25,13 @@
     ],
     "icon": "icon.jpg",
     "activationEvents": [
-        "onCommand:peakchen90.openInBrowser"
+        "onCommand:cmlim107.openInBrowser"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "peakchen90.openInBrowser",
+                "command": "cmlim107.openInBrowser",
                 "title": "%extension.openhtmlinbrowser.title%"
             }
         ],
@@ -39,14 +39,14 @@
             "editor/context": [
                 {
                     "when": "editorLangId == html",
-                    "command": "peakchen90.openInBrowser",
+                    "command": "cmlim107.openInBrowser",
                     "group": "1_modification"
                 }
             ],
             "explorer/context": [
                 {
                     "when": "resourceLangId == html",
-                    "command": "peakchen90.openInBrowser",
+                    "command": "cmlim107.openInBrowser",
                     "group": "1_modification"
                 }
             ]

@@ -1,6 +1,8 @@
 # Open HTML in Default Browser
 
-## 特点
-- 用默认浏览器打开 HTML 文件
-- 在资源管理器中，HTML 文件右键显示 `在浏览器中打开` 菜单
-- 在编辑器中，HTML 文件右键显示 `在浏览器中打开` 菜单
+
+## Features
+- Open the HTML file with your default browser
+- In the Explorer, the HTML file is right-clicking `Open in the browser` menu
+- In the editor, the right side of the HTML file is displayed `Open in the browser` menu
+- Support en, es, fr, ko, ja, zh-CN, zh-TW.
