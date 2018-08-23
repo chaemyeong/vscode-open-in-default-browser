@@ -3,13 +3,13 @@
     "displayName": "Open HTML in Default Browser ML",
     "description": "Open HTML in Default Browser ML",
     "version": "0.0.6",
-    "publisher": "cmlim107",
+    "publisher": "Chaemyeong",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cmlim107/vscode-open-in-default-browser.git"
+        "url": "https://github.com/chaemyeong/vscode-open-in-default-browser.git"
     },
     "bugs": {
-        "url": "https://github.com/cmlim107/vscode-open-in-default-browser/issues"
+        "url": "https://github.com/chaemyeong/vscode-open-in-default-browser/issues"
     },
     "engines": {
         "vscode": "^1.10.0"
